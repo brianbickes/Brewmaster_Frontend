@@ -9,8 +9,8 @@ body {
   .container {
     display: flex;
     flex: 1;
-    flex-direction: row;
-    background-color: #FEFBF7;
+    flex-direction: column;
+    background-color: #86817a;
     border-radius: 5px;
   }
   
@@ -28,11 +28,7 @@ body {
   }
   
   nav {
-    order: -1;
-  }
-  
-  nav, aside {
-    background-color: #C2C8CD;
+    background-color: rgba(75, 42, 42, 0.616);
   }
   
   form {
@@ -56,8 +52,8 @@ body {
   }
   .coffee {
     margin: 5px;
-    padding: 5px 15px 5px 15px;
-    background-color: #d6a879;
+    padding: 20px 15px -10px 15px;
+    background-color: #cab096;
     border-radius: 20px;
     display: flex;
     flex-direction: column;

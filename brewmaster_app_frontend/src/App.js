@@ -88,8 +88,8 @@ export default function App() {
             <main>
               <Coffees coffees={coffees}/>
             </main>
-            <aside>
-            </aside>
+            {/* <aside>
+            </aside> */}
         </div>
         <footer />
     </div>
