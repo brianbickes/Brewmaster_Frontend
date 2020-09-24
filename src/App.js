@@ -12,7 +12,7 @@ export default function App() {
   });
   const getCoffees = async ()=>{
     try{
-      const response = await fetch('http://localhost:3000/coffees');
+      const response = await fetch('http://brewmaster117.herokuapp.com/coffees');
       const data = await response.json();
       setCoffees(data)
     }catch(error){
@@ -36,7 +36,7 @@ export default function App() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try{
-      const response = await axios.post('http://localhost:3000/coffees', formInputs);
+      const response = await axios.post('http://brewmaster117.herokuapp.com/coffees', formInputs);
       const data = response.data;
       updateFormInputs({
         name: '',
