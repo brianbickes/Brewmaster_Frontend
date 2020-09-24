@@ -52,7 +52,7 @@ export default function App() {
     <div className="App">
         <div className="container">
             <nav>
-              <h4>Create a new Coffee</h4>
+              <h4 class="submitHeader">☕️ Create Coffee</h4>
               <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name</label>
                 <input
@@ -75,14 +75,14 @@ export default function App() {
                   onChange={handleChange}
                   value={formInputs.variety}
                   />
-                  <label htmlFor="notes">Notes</label>
+                  <label htmlFor="notes"> Coffee Notes</label>
                 <input
                   type="text"
                   id="notes"
                   onChange={handleChange}
                   value={formInputs.notes}
                   />
-                <input type="submit" className="submit" />
+                <input type="submit" className="submit" value="Create ☕️"/>
               </form>
             </nav>
             <main>

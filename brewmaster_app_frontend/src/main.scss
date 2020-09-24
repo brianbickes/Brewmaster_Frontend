@@ -3,13 +3,13 @@ body {
     min-height: 100vh;
     flex-direction: column;
     background-color: #FAEBD7;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   .container {
     display: flex;
     flex: 1;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #FEFBF7;
     border-radius: 5px;
   }
@@ -21,7 +21,10 @@ body {
   }
   
   main {
+    display: flex;
     flex: 1;
+    flex-direction: row;
+    justify-content: center;
   }
   
   nav {
@@ -39,7 +42,7 @@ body {
   }
   input[type="text"] {
     flex-basis:50%;
-    padding: .2em;
+    padding: 1em;
   }
   input[type="submit"] {
     flex-basis:51%;
@@ -54,8 +57,11 @@ body {
   .coffee {
     margin: 5px;
     padding: 5px 15px 5px 15px;
-    background-color: #E4E1DE;
-    border-radius: 5px;
+    background-color: #d6a879;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   
   @media (min-width: 768px) {
@@ -66,4 +72,22 @@ body {
     nav, aside {
       flex: 0 0 12em;
     }
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #dfdfdf;
+    background-color: grey;
+    padding: 25px 0px 25px 0px;
+    border-radius: 20px;
+  }
+
+  .submitHeader {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    font-size: 20px;
   }
